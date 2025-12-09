@@ -6,6 +6,8 @@ import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import { fadeInUp, stagger } from "../ui/motion";
 
+const EASING = [0.16, 1, 0.3, 1];
+
 const contacts = [
   {
     label: "Correo",
@@ -14,7 +16,7 @@ const contacts = [
   },
   {
     label: "Teléfono / WhatsApp",
-    value: "+52 55 0000 0000",
+    value: "+52 22 81 53 17 51",
     href: "https://wa.me/525500000000",
   },
   {
@@ -23,6 +25,8 @@ const contacts = [
     href: "https://www.linkedin.com",
   },
 ];
+
+
 
 export function FinalCTA() {
   return (
@@ -37,11 +41,11 @@ export function FinalCTA() {
         >
           <motion.p
             className="inline-flex items-center gap-2 rounded-full bg-indigo-500/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-indigo-100 ring-1 ring-indigo-300/40"
-            variants={fadeInUp}
+            variants={fadeInUp as any}
           >
             CTA final
           </motion.p>
-          <motion.div className="space-y-3" variants={fadeInUp}>
+          <motion.div className="space-y-3" variants={fadeInUp as any}>
             <h2 className="text-3xl font-semibold text-white sm:text-4xl">
               Lleva tu idea al siguiente nivel con Devone.
             </h2>
@@ -51,7 +55,7 @@ export function FinalCTA() {
             </p>
           </motion.div>
           <motion.div
-            variants={fadeInUp}
+            variants={fadeInUp as any}
             className="flex flex-wrap gap-4 text-sm font-semibold text-slate-200"
           >
             <Button href="mailto:daveone.upport.dev@gmail.com">
@@ -67,7 +71,7 @@ export function FinalCTA() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-60px" }}
-          variants={fadeInUp}
+          variants={fadeInUp as any}
         >
           <Card className="space-y-4 p-6">
             <p className="text-sm uppercase tracking-[0.18em] text-indigo-200">
