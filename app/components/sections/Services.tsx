@@ -72,7 +72,7 @@ export function Services() {
         variants={stagger}
       >
         {services.map((service) => (
-          <motion.div key={service.title} variants={fadeInUp}>
+          <motion.div key={service.title} variants={fadeInUp as any}>
             <Card className="h-full">
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-3">
