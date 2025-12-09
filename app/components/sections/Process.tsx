@@ -45,7 +45,7 @@ export function Process() {
         variants={stagger}
       >
         {steps.map((step, index) => (
-          <motion.div key={step.title} variants={fadeInUp}>
+          <motion.div key={step.title} variants={fadeInUp as any}>
             <Card className="h-full">
               <div className="flex items-start gap-4">
                 <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-base font-semibold text-white ring-1 ring-white/15">

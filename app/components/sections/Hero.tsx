@@ -22,7 +22,7 @@ export function Hero() {
           animate="show"
           variants={stagger}
         >
-          <motion.div variants={fadeInUp} className="flex flex-wrap gap-3">
+          <motion.div variants={fadeInUp as any} className="flex flex-wrap gap-3">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-100 ring-1 ring-white/15">
               <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
               Devone · Onesimo David Viveros
@@ -32,7 +32,7 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <motion.div className="space-y-4" variants={fadeInUp}>
+          <motion.div className="space-y-4" variants={fadeInUp as any}>
             <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
               Construimos experiencias digitales que inspiran confianza y
               resultados.
@@ -45,7 +45,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            variants={fadeInUp}
+            variants={fadeInUp as any}
             className="flex flex-wrap items-center gap-4"
           >
             <Button href="#contacto">Trabajemos juntos</Button>
@@ -55,7 +55,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            variants={fadeInUp}
+            variants={fadeInUp as any}
             className="grid grid-cols-1 gap-4 rounded-3xl border border-slate-800/70 bg-slate-900/60 p-6 sm:grid-cols-3"
           >
             {stats.map((stat) => (
