@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
 import styles from "../styles/payments.module.css";
 
-const SuccessClient = dynamic(() => import("./SuccessClient"), { ssr: false });
+const SuccessClient = dynamic(() => import("./SuccessClient"), { ssr: false, suspense: true } as any);
 
 export const metadata = {
   title: "Pago exitoso — DevOne",
