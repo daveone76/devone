@@ -1,6 +1,8 @@
 import React, { Suspense } from "react";
-import CancelClient from "./CancelClient";
+import dynamic from "next/dynamic";
 import styles from "../styles/payments.module.css";
+
+const CancelClient = dynamic(() => import("./CancelClient"), { ssr: false });
 
 export const metadata = {
   title: "Pago cancelado — DevOne",
