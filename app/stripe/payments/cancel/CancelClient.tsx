@@ -30,16 +30,12 @@ export default function CancelClient({ planName = "Pro", mainMessage = "No se re
         <div className={styles.meta}>
           <div className={styles.small}>Tu carrito o plan no fue modificado. Si necesitas ayuda, contacta soporte.</div>
         </div>
-        <div className={styles.ctaGroup}>
-          <button className={styles.primaryBtn} onClick={() => router.push('/')}>{ctaLabel}</button>
-          <button className={styles.secondaryBtn} onClick={() => router.push('/pricing')}>Ver planes</button>
-        </div>
       </div>
 
-      <div className={styles.visual} aria-hidden>
+      <div className={`${styles.visual} ${styles.cancelTone} ${styles.subtlePulse}`} aria-hidden>
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="72" height="72" rx="12" fill="#0f1724" fillOpacity="0.04"/>
-          <text x="50%" y="52%" dominantBaseline="middle" textAnchor="middle" fill="#0b1220" fontSize="16" fontWeight="600">Pago</text>
+          <rect width="72" height="72" rx="12" fill="#F59E0B" fillOpacity="0.12"/>
+          <text x="50%" y="52%" dominantBaseline="middle" textAnchor="middle" fill="#92400e" fontSize="16" fontWeight="700">Pago</text>
         </svg>
       </div>
     </div>
